@@ -1,6 +1,16 @@
+$base-color: azure
+$font-color: #683300
+
 html
     box-sizing: border-box
     cursor: default
+    font-size: 10px
+    color: $font-color
+    font-family: 'Bangers', cursive
+    letter-spacing: 10px
+
+*::selection
+    background: rgba(0,0,0,0)
 
 *, *:before, *:after
     box-sizing: inherit
@@ -8,26 +18,97 @@ html
     padding: 0px
 
 body
-    background-color: #edc938
-
-.images
-    display: flex
-    flex-direction: column
-    width: 100vw
-    align-items: center
-    .row
-        display: flex
-        width: 100%
-        justify-content: center
-    img
-        width: 30%
-        max-width: 350px
-        height: auto
-        padding: 200px 20px 0 20px
+    background-color: $base-color
 
 .titles
-    display: flex
-    justify-content: center
-    padding-top: 3em
+    padding-top: 2em
     font-size: 1.5em
+    display: flex
+    flex-direction: column
+    align-items: center
+    width: 100%
+    padding-left: 10px
 
+.titleScore
+    display: flex
+    align-items: baseline
+
+.score
+    padding: 20px
+    font-size: 7rem
+    background: $font-color
+    margin-left: 30px
+    margin-top: 0
+    color: $base-color
+
+h1
+    text-align: center
+    font-size: 6rem
+    line-height: 1
+    margin-bottom: 50px
+
+button
+    width: 120px
+    height: 50px
+    background-color: $base-color
+    border: 4px solid $font-color
+    color: $font-color
+    border-radius: 20px
+    font-family: 'Bangers', cursive
+    font-size: 20px
+    cursor: pointer
+    outline: none
+
+.hole
+    width: 100%
+    height: 200px
+    background: $base-color url('https://files.tinypic.pl/i/00996/eh11c2e56klt.png') bottom center no-repeat
+    background-size: 70%
+    position: relative
+    overflow: hidden
+
+.mole
+    background:url('https://files.tinypic.pl/i/00996/j7u111ivhb72.png') bottom center no-repeat
+    background-size: 70%
+    position: relative
+    top: 100%
+    width: 100%
+    height: 100%
+    transition: all 0.4s
+
+.game
+    display: grid
+    grid-template-columns: auto auto auto
+    max-width: 1000px
+    margin: auto
+    padding-bottom: 30px
+
+.hole.up .mole
+    top: 0
+
+.catch
+    padding: 50px
+
+@media (max-width: 600px)
+    h1
+        font-size: 3rem
+    .score
+        font-size: 5rem
+        margin-left: 10px
+    .hole
+        height: 160px
+        background-size: 80%
+    .mole
+        background-size: 80%
+
+@media (max-width: 400px)
+    h1
+        font-size: 2rem
+    .score
+        font-size: 4rem
+        margin-left: 10px
+    .hole
+        height: 120px
+        background-size: 80%
+    .mole
+        background-size: 80%

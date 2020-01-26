@@ -2,6 +2,18 @@ html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   cursor: default;
+  font-size: 10px;
+  color: #683300;
+  font-family: 'Bangers', cursive;
+  letter-spacing: 10px;
+}
+
+*::-moz-selection {
+  background: rgba(0, 0, 0, 0);
+}
+
+*::selection {
+  background: rgba(0, 0, 0, 0);
 }
 
 *, *:before, *:after {
@@ -12,10 +24,12 @@ html {
 }
 
 body {
-  background-color: #edc938;
+  background-color: azure;
 }
 
-.images {
+.titles {
+  padding-top: 2em;
+  font-size: 1.5em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -23,37 +37,120 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 100vw;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.images .row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   width: 100%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  padding-left: 10px;
 }
 
-.images img {
-  width: 30%;
-  max-width: 350px;
-  height: auto;
-  padding: 200px 20px 0 20px;
-}
-
-.titles {
+.titleScore {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-top: 3em;
-  font-size: 1.5em;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.score {
+  padding: 20px;
+  font-size: 7rem;
+  background: #683300;
+  margin-left: 30px;
+  margin-top: 0;
+  color: azure;
+}
+
+h1 {
+  text-align: center;
+  font-size: 6rem;
+  line-height: 1;
+  margin-bottom: 50px;
+}
+
+button {
+  width: 120px;
+  height: 50px;
+  background-color: azure;
+  border: 4px solid #683300;
+  color: #683300;
+  border-radius: 20px;
+  font-family: 'Bangers', cursive;
+  font-size: 20px;
+  cursor: pointer;
+  outline: none;
+}
+
+.hole {
+  width: 100%;
+  height: 200px;
+  background: azure url("https://files.tinypic.pl/i/00996/eh11c2e56klt.png") bottom center no-repeat;
+  background-size: 70%;
+  position: relative;
+  overflow: hidden;
+}
+
+.mole {
+  background: url("https://files.tinypic.pl/i/00996/j7u111ivhb72.png") bottom center no-repeat;
+  background-size: 70%;
+  position: relative;
+  top: 100%;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.game {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  max-width: 1000px;
+  margin: auto;
+  padding-bottom: 30px;
+}
+
+.hole.up .mole {
+  top: 0;
+}
+
+.catch {
+  padding: 50px;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 3rem;
+  }
+  .score {
+    font-size: 5rem;
+    margin-left: 10px;
+  }
+  .hole {
+    height: 160px;
+    background-size: 80%;
+  }
+  .mole {
+    background-size: 80%;
+  }
+}
+
+@media (max-width: 400px) {
+  h1 {
+    font-size: 2rem;
+  }
+  .score {
+    font-size: 4rem;
+    margin-left: 10px;
+  }
+  .hole {
+    height: 120px;
+    background-size: 80%;
+  }
+  .mole {
+    background-size: 80%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

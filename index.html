@@ -6,24 +6,37 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Bangers&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class='titles'>
-        <h1 class="gameTitle">WHACK-A-MOLE!</h1>
-        <h1 class="score">0</h1>
-    </div>
-    <div class='images'>
-        <div class="row first-row">
-            <img class='hole hole1' src="./img/mound.svg" alt="">
-            <img class='hole hole2' src="./img/mound.svg" alt="">
-            <img class='hole hole3' src="./img/mound.svg" alt="">
+        <div class='titleScore'>
+                <h1 class="gameTitle">WHACK-A-MOLE!</h1>
+                <span class="score">0</span>
         </div>
-        <div class='row second-row'>
-            <img class='hole hole4' src="./img/mound.svg" alt="">
-            <img class='hole hole5' src="./img/mound.svg" alt="">
-            <img class='hole hole6' src="./img/mound.svg" alt="">
+        <button onClick="startGame()">LET'S PLAY</button>
+    </div>
+    <div class='game'>
+        <div class="hole hole1">
+            <div class="mole"></div>
+        </div>
+        <div class="hole hole2">
+            <div class="mole"></div>
+        </div>
+        <div class="hole hole3">
+            <div class="mole"></div>
+        </div>
+        <div class="hole hole4">
+            <div class="mole"></div>
+        </div>
+        <div class="hole hole5">
+            <div class="mole"></div>
+        </div>
+        <div class="hole hole6">
+            <div class="mole"></div>
         </div>
     </div>
+    <h1 class='catch'>CATCH 'EM ALL</h1>
     <script src="app.js"></script>
 </body>
 </html>
