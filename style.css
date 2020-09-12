@@ -85,14 +85,14 @@ button {
 .hole {
   width: 100%;
   height: 200px;
-  background: azure url("https://files.tinypic.pl/i/00996/eh11c2e56klt.png") bottom center no-repeat;
+  background: azure url("https://raw.githubusercontent.com/Morswin19/Whack-a-mole/2217859c657cc2b9228163c667f329ae39d84b18/img/mound.svg") bottom center no-repeat;
   background-size: 70%;
   position: relative;
   overflow: hidden;
 }
 
 .mole {
-  background: url("https://files.tinypic.pl/i/00996/j7u111ivhb72.png") bottom center no-repeat;
+  background: url("https://raw.githubusercontent.com/Morswin19/Whack-a-mole/2217859c657cc2b9228163c667f329ae39d84b18/img/mole2.svg") bottom center no-repeat;
   background-size: 70%;
   position: relative;
   top: 100%;
