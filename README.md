@@ -6,6 +6,6 @@ I use only HTML, CSS (Sass) and plain JS
 
 ### I am open for contributions
 
-If You don't want to contribute, but find some bugs, please write to me :)
+If you don't want to contribute, but find some bugs, please write to me :)
 
 ## Have Fun and let guinea pigs rule the World
